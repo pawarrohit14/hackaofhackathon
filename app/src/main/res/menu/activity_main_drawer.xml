@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_broadcast"
+            android:icon="@drawable/ic_wifi_tethering_black_24dp"
+            android:title="@string/nav_broadcast" />
+
+        <item
+            android:id="@+id/nav_interface"
+            android:icon="@drawable/ic_insert_comment_black_24dp"
+            android:title="@string/nav_interface" />
+
+        <item
+            android:id="@+id/nav_queue_list"
+            android:icon="@drawable/queue_list_icon"
+            android:title="@string/nav_queue_list" />
+        <item
+            android:id="@+id/nav_backout_list"
+            android:icon="@drawable/backout_list_icon"
+            android:title="@string/nav_backout_list" />
+
+        <item
+            android:id="@+id/nav_error_log"
+            android:icon="@drawable/error_log_icon"
+            android:title="@string/nav_error_log" />
+
+        <item
+            android:id="@+id/nav_task_list"
+            android:icon="@drawable/task_icon"
+            android:title="@string/nav_task_list" />
+
+        <item
+            android:id="@+id/nav_event_status"
+            android:icon="@drawable/event_status_icon"
+            android:title="@string/nav_event_status" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_exit"
+            android:title="@string/nav_logout" />
+    </group>
+
+   <!-- <item android:title="Other">
+        <menu>
+            <item
+                android:id="@+id/nav_about_us"
+                android:title="@string/nav_about_us" />
+            <item
+                android:id="@+id/nav_privacy_policy"
+                android:title="@string/privacy_policy" />
+        </menu>
+    </item>-->
+
+</menu>

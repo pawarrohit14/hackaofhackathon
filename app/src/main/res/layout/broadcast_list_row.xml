@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:paddingBottom="16dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="16dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_sev_color"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/notification_circle_active"
+
+                />
+
+
+            <TextView
+                android:id="@+id/tv_jvmname"
+                style="@style/BodyTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tv_message"
+                style="@style/BodyTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+
+                />
+
+            <TextView
+                android:id="@+id/tv_severity"
+                style="@style/BodyTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                />
+
+            <TextView
+                android:id="@+id/tv_timestamp"
+                style="@style/BodyTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="2"
+                android:layout_weight="1"
+
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

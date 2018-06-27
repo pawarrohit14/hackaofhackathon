@@ -1,0 +1,74 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '26.0.2'
+    defaultConfig {
+        applicationId "info.androidhive.navigationdrawer"
+        minSdkVersion 21
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+          //  shrinkResources true
+        }
+
+    }
+
+    dataBinding {
+        enabled = true
+    }
+    android {
+        packagingOptions {
+            exclude 'META-INF/DEPENDENCIES.txt'
+            exclude 'META-INF/LICENSE.txt'
+            exclude 'META-INF/NOTICE.txt'
+            exclude 'META-INF/NOTICE'
+            exclude 'META-INF/LICENSE'
+            exclude 'META-INF/DEPENDENCIES'
+            exclude 'META-INF/notice.txt'
+            exclude 'META-INF/license.txt'
+            exclude 'META-INF/dependencies.txt'
+            exclude 'META-INF/LGPL2.1'
+        }
+    }
+
+}
+
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:design:26.1.0'
+    compile 'com.android.support:appcompat-v7:26.0.0'
+    compile 'com.android.support:cardview-v7:26.1.0'
+    compile 'com.android.support:support-v4:26.1.0'
+    compile 'com.android.support:recyclerview-v7:26.1.0'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.android.support:multidex:1.0.3'
+    testCompile 'junit:junit:4.12'
+    annotationProcessor 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    // Glide image library
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    //Realtime api
+    compile 'co.realtime:messaging-android:2.1.+'
+    //jackson
+    compile 'com.fasterxml.jackson.core:jackson-core:2.9.4'
+    compile 'com.fasterxml.jackson.core:jackson-annotations:2.9.4'
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.9.4'
+    //progress dialog
+    compile 'com.roger.catloadinglibrary:catloadinglibrary:1.0.1'
+    compile 'de.greenrobot:eventbus:2.3.0'
+    implementation files('libs/rtmlayers.jar')
+}

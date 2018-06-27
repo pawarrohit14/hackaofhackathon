@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">FinSurveillance</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+
+    <!-- Navigation Drawer menu labels -->
+    <string name="nav_broadcast">Alerts</string>
+    <string name="nav_interface">Interface</string>
+    <string name="nav_queue_list">Queue</string>
+    <string name="nav_backout_list">Backout</string>
+    <string name="nav_error_log">System error</string>
+    <string name="nav_task_list">Task</string>
+    <string name="nav_event_status">Event Status</string>
+    <string name="nav_logout">Logout</string>
+
+    <!-- Toolbar titles when navigation menu item is selected -->
+    <string-array name="nav_item_activity_titles">
+        <item>Alerts</item>
+        <item>Interface</item>
+        <item>Queue</item>
+        <item>Backout</item>
+        <item>System error</item>
+        <item>Task</item>
+        <item>Event Status</item>
+        <item>Logout</item>
+
+    </string-array>
+
+    <string name="activity_title_about_us">FinSurv</string>
+    <string name="activity_title_privacy_policy">Privacy Policy</string>
+    <string name="action_clear_all">Clear All</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_mark_all_read">Mark All as Read</string>
+    <string name="privacy_policy">Privacy Policy</string>
+</resources>
